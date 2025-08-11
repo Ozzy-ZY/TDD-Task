@@ -8,8 +8,8 @@ public class StopWatch {
             this.minutes = minutes;
         }
         if(this.minutes >= 60){
-            this.hours++;
-            this.minutes = this.minutes - 60;
+            this.hours = this.minutes / 60;
+            this.minutes = this.minutes % 60;
         }
     }
 
